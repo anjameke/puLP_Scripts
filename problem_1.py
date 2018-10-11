@@ -20,11 +20,11 @@ prob += x + y + z <= 3, "third constrait"
 prob.solve()
 
 # print out whether or not this is (in)feasible, optimal, (un)bounded
-print("Status:", LpStatus[prob.status])
+print "Status:", LpStatus[prob.status]
 
 # print out the variables' optimal values
 for v in prob.variables():
-    print(v.name, "=", v.varValue)
+    print v.name, "=", v.varValue
 
 # The optimized objective function value is printed to the screen
-print("The optimal solution 'z' is: ", value(prob.objective))
+print "The optimal solution 'z' is:", value(prob.objective)
