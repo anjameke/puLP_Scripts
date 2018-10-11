@@ -1,7 +1,9 @@
 from pulp import *
 
+# create an Lp instance
 prob = LpProblem("simplex problem 1", LpMaximize)
 
+# initialize the variables
 x = LpVariable("x", 0)
 y = LpVariable("y", 0)
 z = LpVariable("z", 0)
