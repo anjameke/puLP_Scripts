@@ -27,4 +27,4 @@ for v in prob.variables():
     print(v.name, "=", v.varValue)
 
 # The optimized objective function value is printed to the screen
-print("Total Cost of Ingredients per can = ", value(prob.objective))
+print("The optimal solution 'z' is: ", value(prob.objective))
